@@ -1,0 +1,269 @@
+ .view-port {
+    display: flex;
+    flex-direction: column;
+    background-color: #FCCC24;
+ }
+
+ .user-Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .user-Info.hide {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: 1s;
+    z-index: 1;
+ }
+
+ .abstract {
+    text-align: left;
+ }
+
+ .userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+}
+
+
+
+text {
+    font-size:36rpx;
+    color: #666;
+}
+
+text.user-nickName {
+    color: #2196F3;
+}
+
+.pass-index {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10rpx 0 10rpx;
+}
+
+.game-container {
+    height: 630rpx;
+    opacity: 0;
+    position: relative;
+}
+
+.game-container.show {
+    opacity: 1;
+    transition: 1s;
+    position: relative;
+}
+
+.game-container image {
+    display: block;
+    width:600rpx;
+    height:600rpx;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.timer {
+    position:absolute;
+    z-index:99;
+    top:80rpx;
+    right:40rpx;
+    font-size:40rpx;
+    color:#000;
+}
+
+.keyboard {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard.show {
+    display: block;
+    opacity: 1;
+    transition: 1s;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard ul {
+    flex: 1;
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.keyboard .board {
+    display: block;
+    width: 100%;
+    height: 100rpx;
+    background-color: #FFE082;
+    font-size: 50rpx;
+    line-height: 100rpx;
+    padding-left: 20rpx;
+}
+
+.keyboard ul {
+    background-color: #FF9800;
+}
+
+.keyboard ul li{
+    float: left;
+    width: 25%;
+    line-height: 110rpx;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    background-color: #FF9800;
+    color: #ffffff;
+}
+
+.keyboard ul li:active {
+    background-color: #FFA000;
+}
+
+.keyboard ul li.operate0 {
+    /* font-size: 30rpx;
+    font-weight: bolder; */
+}
+
+.keyboard ul li.operate1 {
+    font-size: 30rpx;
+    font-weight: bolder;
+}
+
+.keyboard ul li.operate2 {
+    font-size: 30rpx;
+    font-weight: bolder;
+    color: #000;
+}
+
+.result-dialog {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.restart {
+    margin: 0 auto;
+    width: 60%;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 50rpx 0 50rpx;
+    border-radius: 10rpx;
+}
+
+.restart image {
+    margin: 0 auto 50rpx;
+    display: block;
+    width: 300rpx;
+    height: 300rpx;
+}
+
+.restart button {
+    width: 200rpx;
+    font-size: 28rpx;
+    font-weight: bolder;
+    line-height: 80rpx;
+    margin-top: 50rpx;
+    background-color:#FF6F00;
+    color:#fff;
+}
+
+.success {
+    margin: 0 auto;
+    width: 60%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 60rpx 0;
+    border-radius: 10rpx;
+}
+
+.success image {
+    margin: 0 auto;
+    display: block;
+    width: 350rpx;
+    height: 350rpx;
+}
+
+.failure {
+    margin: 0 auto;
+    width: 60%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 100rpx 0 50rpx;
+    border-radius: 10rpx;
+}
+
+.failure image {
+    margin: 0 auto;
+    display: block;
+    width: 300rpx;
+    height: 300rpx;
+}
+
+.failure button {
+    width: 200rpx;
+    font-size: 28rpx;
+    font-weight: bolder;
+    line-height: 80rpx;
+    margin-top: 50rpx;
+    background-color: #F44336;
+    color: #ffffff;
+}
+
+.total-time {
+    margin: 0 auto;
+    width: 60%;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 100rpx 0 50rpx;
+    border-radius: 10rpx;
+}
+
+.total-time image {
+    margin: 0 auto;
+    display: block;
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.total-time button {
+    width: 200rpx;
+    font-size: 28rpx;
+    font-weight: bolder;
+    line-height: 80rpx;
+    margin-top: 50rpx;
+    background-color: #ffffff;
+}

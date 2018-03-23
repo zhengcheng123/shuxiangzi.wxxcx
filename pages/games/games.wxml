@@ -1,0 +1,38 @@
+<view class="view-port">
+    <view class="user-Info {{hide}}}">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname"></text>
+        <text decode="true" class="abstract">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;亲爱的<text class="user-nickName">{{userInfo.nickName}}</text>，{{fontContent}}</text>
+    </view>
+    <!-- <button bindtap='getName'>开始游戏</button> -->
+    <view class="game-container {{show}}">
+        <text class="pass-index"> 第{{ passIndex }}关 </text>
+        <image src="{{imgUrl}}" mode="scaleToFill" />
+        <text class="timer"> {{ timer }}秒 </text>
+    </view>
+    <view class="keyboard {{show}}">
+        <text class="board"> {{ answer }} </text>
+        <ul>
+            <li wx:for="{{ digitaKeyboard }}" id="{{item.id}}" class="operate{{item.type}}" bindtap="chose"> {{item.name}}
+            </li>
+        </ul>
+    </view>
+    <view class="result-dialog" wx:if="{{ resultDialog }}">
+        <view class="restart" wx:if="{{ resultShow === 1 }}">
+            <image style="" mode="" src="http://zhengcheng.club/demo/images/xcx/win.gif" binderror="" bindload=""></image>
+            <text> 累计用时: {{ runTime }} </text>
+            <button bindtap="restart">继续挑战</button>
+        </view>
+        <view class="success" wx:if="{{ resultShow === 2 }}">
+            <image style="" mode="" src="{{ good }}" binderror="" bindload=""></image>
+        </view>
+        <view class="failure" wx:if="{{ resultShow === 3 }}">
+            <image style="" mode="" src="{{ faile }}" binderror="" bindload=""></image>
+            <button bindtap="restart">再来一次</button>
+        </view>
+        <view class="total-time" wx:if="{{ resultShow === 4 }}">
+            <image style="" mode="" src="http://zhengcheng.club/demo/images/xcx/restart.png" binderror="" bindload=""></image>
+            <button>再来一次</button>
+        </view>
+    </view>
+</view>

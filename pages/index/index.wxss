@@ -1,0 +1,51 @@
+/**index.wxss**/
+.container {
+    background-image: url(http://zhengcheng.club/demo/images/xcx/bg.jpg);
+    background-size: cover;
+}
+
+/* .userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+} */
+
+/* .usermotto {
+    margin-top: 200px;
+} */
+
+.title {
+    width: 375rpx;
+    height: 60rpx;
+    margin-top: 530rpx;
+    background-image: url(http://zhengcheng.club/demo/images/xcx/title.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+button {
+    background-color: #E65100;
+    color: #ffffff;
+}
+
+button:active {
+    background: #F57F17;
+    color: #ffffff;
+}
+
+button:visited {
+    background: #F57F17;
+    color: #ffffff;
+}

@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="title">
+         <button wx:if="{{!hasUserInfo && canIUse}}" style="display:none;" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称                                          </button>
+        <!-- 全民数箱子 -->
+    </view>
+    <!-- <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+    </view> -->
+
+    <button bindtap="playGames">进入游戏</button>
+</view>
